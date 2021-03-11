@@ -48,7 +48,7 @@ public class SendEmailTLS {
             	String text=list.toString();
             	message.setText("\n"+text);
             }
-
+            Transport.send(message);
             System.out.println("Done");
 
         } catch (MessagingException e) {
